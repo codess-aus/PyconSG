@@ -75,7 +75,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Chapters:
-      - Overview: chapters/README.md
       - 1. Why Trust?: chapters/01-title.md
       - 2. What We'll Explore: chapters/02-agenda.md
       - 3. Meet Our Agents: chapters/03-agents.md

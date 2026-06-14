@@ -8,11 +8,11 @@
   --md-default-bg-color--light: #fffaf2;
   --md-default-fg-color: #121212;
   --md-default-fg-color--light: #4a433b;
-  --md-typeset-a-color: #2f6b1f;
+  --md-typeset-a-color: #121212;
   --md-primary-fg-color: #1f2b17;
   --md-primary-fg-color--light: #2b3d22;
   --md-primary-bg-color: #ffffff;
-  --md-accent-fg-color: #7fbf3f;
+  --md-accent-fg-color: #121212;
   --md-footer-bg-color: #efe5d6;
   --md-footer-bg-color--dark: #e4d7c4;
   --md-footer-fg-color: #121212;
@@ -25,16 +25,46 @@
   --md-default-bg-color--light: #131913;
   --md-default-fg-color: #f5f7f2;
   --md-default-fg-color--light: #d4dfd1;
-  --md-typeset-a-color: #b7ef68;
+  --md-typeset-a-color: #f5f7f2;
   --md-primary-fg-color: #e9f1df;
   --md-primary-fg-color--light: #ffffff;
   --md-primary-bg-color: #0b0f0b;
-  --md-accent-fg-color: #d8ff8a;
+  --md-accent-fg-color: #f5f7f2;
   --md-footer-bg-color: #111711;
   --md-footer-bg-color--dark: #0b0f0b;
   --md-footer-fg-color: #f5f7f2;
   --md-footer-fg-color--light: #f5f7f2;
   --md-code-bg-color: #151c15;
+}
+
+[data-md-color-scheme="merlion-light"] .md-typeset,
+[data-md-color-scheme="merlion-light"] .md-nav,
+[data-md-color-scheme="merlion-light"] .md-sidebar,
+[data-md-color-scheme="merlion-light"] .md-search,
+[data-md-color-scheme="merlion-light"] .md-header,
+[data-md-color-scheme="merlion-light"] .md-tabs {
+  color: #121212;
+}
+
+[data-md-color-scheme="merlion-dark"] .md-typeset,
+[data-md-color-scheme="merlion-dark"] .md-nav,
+[data-md-color-scheme="merlion-dark"] .md-sidebar,
+[data-md-color-scheme="merlion-dark"] .md-search,
+[data-md-color-scheme="merlion-dark"] .md-header,
+[data-md-color-scheme="merlion-dark"] .md-tabs {
+  color: #f5f7f2;
+}
+
+[data-md-color-scheme="merlion-light"] .md-typeset a,
+[data-md-color-scheme="merlion-light"] .md-nav__link,
+[data-md-color-scheme="merlion-light"] .md-nav__item .md-nav__link--active {
+  color: #121212;
+}
+
+[data-md-color-scheme="merlion-dark"] .md-typeset a,
+[data-md-color-scheme="merlion-dark"] .md-nav__link,
+[data-md-color-scheme="merlion-dark"] .md-nav__item .md-nav__link--active {
+  color: #f5f7f2;
 }
 
 html {
