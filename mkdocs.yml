@@ -1,0 +1,91 @@
+site_name: Merlions, Agents & Copilot
+site_description: Trustworthy Python agents on Azure
+site_url: https://codess-aus.github.io/PyconSG/
+
+repo_url: https://github.com/codess-aus/PyconSG
+repo_name: codess-aus/PyconSG
+
+docs_dir: docs
+site_dir: site
+
+validation:
+  nav:
+    omitted_files: ignore
+    not_found: ignore
+    absolute_links: ignore
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+    anchors: ignore
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.footer
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: merlion-light
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: lime
+      accent: green
+    - scheme: merlion-dark
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: lime
+      accent: green
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Chapters:
+      - Overview: chapters/README.md
+      - 1. Why Trust?: chapters/01-title.md
+      - 2. What We'll Explore: chapters/02-agenda.md
+      - 3. Meet Our Agents: chapters/03-agents.md
+      - 4. Multi-Agent Systems: chapters/04-multiagent.md
+      - 5. GitHub Copilot to the Rescue: chapters/05-github-copilot.md
+      - 6. Trust Is Our Architectural Style: chapters/06-trust.md
+      - "7. Walkthrough: Copilot Scaffolds the Safe Parts": chapters/07-demo-copilot.md
+      - 8. Hawker Recommender Agent: chapters/08-hawker-agent.md
+      - 9. Haze Tracker Agent: chapters/09-haze-agent.md
+      - 10. Merlion Wisecracker Agent: chapters/10-wisecracker-agent.md
+      - "11. From Local to Cloud: Azure": chapters/11-azure-deploy.md
+      - 12. Observe. Evaluate. Improve.: chapters/12-observe.md
+      - 13. Where to Go From Here: chapters/13-call-to-action.md
