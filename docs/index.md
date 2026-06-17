@@ -10,15 +10,6 @@
 > Everything here is grounded in current Microsoft Build 2026 guidance and in
 > the working repository content under [chapters](chapters/README.md).
 
-## How to use this site
-
-- **Developers:** follow the *Do this next* sections. They reference the repo
-  structure and chapter flow.
-- **Decision makers:** read the *Why it matters* and *Key terms* sections. They
-  give you the vocabulary to ask the right questions.
-- **Everyone:** the Build 2026 grounding boxes point to the supporting sessions
-  and ideas used throughout the talk.
-
 ## Chapter index
 
 | # | Chapter | Theme |

@@ -41,7 +41,6 @@
 [data-md-color-scheme="merlion-light"] .md-nav,
 [data-md-color-scheme="merlion-light"] .md-sidebar,
 [data-md-color-scheme="merlion-light"] .md-search,
-[data-md-color-scheme="merlion-light"] .md-header,
 [data-md-color-scheme="merlion-light"] .md-tabs {
   color: #121212;
 }
@@ -50,8 +49,32 @@
 [data-md-color-scheme="merlion-dark"] .md-nav,
 [data-md-color-scheme="merlion-dark"] .md-sidebar,
 [data-md-color-scheme="merlion-dark"] .md-search,
-[data-md-color-scheme="merlion-dark"] .md-header,
 [data-md-color-scheme="merlion-dark"] .md-tabs {
+  color: #f5f7f2;
+}
+
+/* Header / top banner bar — accessible contrast in both modes */
+[data-md-color-scheme="merlion-light"] .md-header {
+  background-color: #1f2b17;
+  color: #f5f7f2;
+}
+
+[data-md-color-scheme="merlion-light"] .md-header__title,
+[data-md-color-scheme="merlion-light"] .md-header__button,
+[data-md-color-scheme="merlion-light"] .md-header .md-search__input::placeholder,
+[data-md-color-scheme="merlion-light"] .md-header nav a {
+  color: #f5f7f2;
+}
+
+[data-md-color-scheme="merlion-dark"] .md-header {
+  background-color: #111711;
+  color: #f5f7f2;
+}
+
+[data-md-color-scheme="merlion-dark"] .md-header__title,
+[data-md-color-scheme="merlion-dark"] .md-header__button,
+[data-md-color-scheme="merlion-dark"] .md-header .md-search__input::placeholder,
+[data-md-color-scheme="merlion-dark"] .md-header nav a {
   color: #f5f7f2;
 }
 
