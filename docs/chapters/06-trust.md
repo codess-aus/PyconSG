@@ -56,16 +56,3 @@ allowlist, here are the traces, here's the eval suite."*
   without a redeploy.
 - **Audit trail**: a durable, queryable record of what the agent decided and
   why.
-
-## Do this next
-
-1. Read [`governance.py`](../../src/merlions/governance.py) and note how a
-   malformed policy raises (fails closed) rather than allowing everything.
-2. Open a policy file like
-   [`policies/hawker.yaml`](../../src/merlions/policies/hawker.yaml) and see the
-   allowlist, blocked patterns, call limit, and citation requirement.
-3. For your project, write the four pillars into your design doc *before* you
-   write the agent.
-
-> 📺 **Build 2026 grounding:** **BRK250** (observe and control agents across any
-> framework) and **LTG430** (Agent Control Specification).

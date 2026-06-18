@@ -79,14 +79,3 @@ policy match denies the call.
   policy and audit-logged. See [`governance.py`](../../src/merlions/governance.py).
 - **Fail-closed test**: a test that proves the system denies when uncertain.
 - **Mock**: a stand-in for an external API so tests are fast and deterministic.
-
-## Do this next
-
-1. Run the walkthrough yourself: `./talk/demos/demo1.ps1` (no API keys, no
-   network).
-2. Recreate the flow on one of your own tools: signature → validation →
-   `@govern` → unhappy-path tests.
-3. Make "unhappy paths first" your default prompt to Copilot.
-
-> 📺 **Build 2026 grounding:** **LTG405** (*Better tests, faster*) and
-> **ODSP912** (*Build agentic testing systems to validate AI-generated code*).

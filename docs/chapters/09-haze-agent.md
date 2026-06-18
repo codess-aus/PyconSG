@@ -62,14 +62,3 @@ are buying one pattern, applied three times.
   surfaced to the user instead of hidden.
 - **Graceful degradation**: a defined fallback chain so the system stays useful
   when a dependency fails.
-
-## Do this next
-
-1. Read [`haze.py`](../../src/merlions/agents/haze.py) and find the dedupe key
-   and the fallback chain.
-2. Add a dedupe key to any agent action in your system that has a side effect.
-3. Make every external dependency in your agent have an explicit fallback and a
-   visible "data unavailable" path.
-
-> 📺 **Build 2026 grounding:** reliability + tracing patterns in **TT640**
-> (*Any agent, any cloud: Observability patterns*).

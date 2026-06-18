@@ -85,15 +85,3 @@ stay happy.
   can hold your RAG sources, eval datasets, and telemetry.
 - **Rayfin** *(Preview)*: a Microsoft Fabric capability for building enterprise
   apps faster directly on Fabric data.
-
-## Do this next
-
-1. Stand up the core four in a test resource group and deploy one agent with
-   `az containerapp up`.
-2. Move every secret into Key Vault and switch to managed identity.
-3. Enable Application Insights and confirm you see a tool-call trace before you
-   add features.
-
-> 📺 **Build 2026 grounding:** **DEM341** (Foundry + OpenTelemetry tracing) and
-> the Agent 365 / Entra / Defender / Purview governance stack in
-> [`context.md`](../context.md).

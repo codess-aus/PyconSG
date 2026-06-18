@@ -52,15 +52,3 @@ hallucination every time.
   (e.g. `menu_index/satay-bay/2026-06-13`).
 - **Least-privilege tool**: read-only where possible; no side effects unless
   explicitly required and approved.
-
-## Do this next
-
-1. Read [`hawker.py`](../../src/merlions/agents/hawker.py) and follow the
-   tool → retrieve → ground → cite flow.
-2. Add `require_citation` to one of your own agents and make it refuse when it
-   can't cite.
-3. Before reaching for fine-tuning, try tool use + retrieval first.
-
-> 📺 **Build 2026 grounding:** **LTG427** (*Rubric-Based Evaluation*) for turning
-> "must cite a source" into an automated test, and built-in **Groundedness**
-> evaluators in [`context.md`](../context.md).

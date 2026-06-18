@@ -51,15 +51,3 @@ spend before generating any code.
   its suggestions match your codebase.
 - **TDD with Copilot**: write (or generate) tests first, then let Copilot
   implement against them.
-
-## Do this next
-
-1. Add a `.github/copilot-instructions.md` to your repo with 5-8 concrete rules.
-2. Follow the walkthrough in [Chapter 7](07-demo-copilot.md): Copilot scaffolds
-   a tool, a guardrail, and four tests in about three minutes.
-3. Adopt the loop: **write tests first → let Copilot implement → run in CI
-   before merge.**
-
-> 📺 **Build 2026 grounding:** **LTG402** (*Why GitHub Copilot misses context*),
-> **LTG405** (*Better tests, faster*), and **DEM350** (*GitHub Agentic
-> Workflows*). See [`context.md`](../context.md).

@@ -32,12 +32,3 @@ fourth or fifth agent without reinventing anything.
   learning one reusable pattern applied three times.
 - **Blast radius**: how much can go wrong when one component fails. Small
   agents mean a small blast radius.
-
-## Do this next
-
-1. Decide which of the three example agents is closest to your real problem.
-2. Read that agent's chapter (8, 9, or 10) first, then come back for the
-   cross-cutting chapters (6 trust, 11 deploy, 12 observe).
-
-> 📺 **Build 2026 grounding:** the agentic SDLC framing here maps to **DEM303**
-> (*Late to agentic coding? Don't panic, build.*).

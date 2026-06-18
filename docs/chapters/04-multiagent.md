@@ -60,15 +60,3 @@ pattern is what matters, not the library.**
 - **Composable**: you can add or replace one agent without touching the others.
 - **Fan-out / fan-in**: dispatch to several agents in parallel, then merge
   their results into one answer.
-
-## Do this next
-
-1. Read [`router.py`](../../src/merlions/agents/router.py) and trace one request
-   from intent classification to composed answer.
-2. Run the multi-agent example to watch the fan-out for yourself:
-   `./talk/demos/demo2.ps1` (walked through in [Chapter 10](10-wisecracker-agent.md)).
-3. In your own system, keep the router dumb and the specialists smart. Routing
-   logic should be small and testable.
-
-> 📺 **Build 2026 grounding:** framework-agnostic orchestration and tracing is
-> the theme of **DEM341** and **TT640** (*Any agent, any cloud*).

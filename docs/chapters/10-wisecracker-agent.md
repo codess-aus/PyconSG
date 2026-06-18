@@ -59,15 +59,3 @@ governed by the humour policy. Separating "fact that must be grounded" from
   over the safe foundation.
 - **Composite question**: one user message that requires several agents to
   answer fully.
-
-## Do this next
-
-1. Read [`wisecracker.py`](../../src/merlions/agents/wisecracker.py) and its
-   policy to see how tone is bounded.
-2. Run the example (`./talk/demos/demo2.ps1`) and watch the parallel fan-out and
-   the inline citations.
-3. In your product, treat personality as a layer *on top of* trust, never as a
-   replacement for it.
-
-> 📺 **Build 2026 grounding:** safety filters and policies in engineering
-> workflows: **DEM369** (*Responsible AI in Action*).

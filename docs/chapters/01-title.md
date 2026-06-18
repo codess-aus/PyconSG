@@ -34,14 +34,3 @@ collaborate.** That is the pattern that actually ships.
   produce an answer, often over multiple steps.
 - **Trustworthy**: explainable, safe, reliable, and observable. The rest of
   these chapters define each property concretely.
-
-## Do this next
-
-1. Clone the repo: [`README.md`](../../README.md) has setup steps.
-2. Skim the source layout under [`src/merlions/`](../../src/merlions): three
-   agents, their tools, their policies, and an eval suite.
-3. Read the chapters in order, or jump to the agent that matches your use case.
-
-> 📺 **Go deeper:** the Microsoft Build 2026 sessions that inform this guide are
-> listed in [`talk/context.md`](../context.md). Start with **BRK250** (observe
-> and control agents across any framework).

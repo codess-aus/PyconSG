@@ -44,14 +44,3 @@ without risk scaling with it.
 - **Least privilege**: each agent gets only the tools it needs, nothing more.
 - **Risk profile**: the specific ways a given agent can fail, and what each
   failure would cost.
-
-## Do this next
-
-1. Open the three agent files and notice how similar their *structure* is and
-   how different their *tools and policies* are.
-2. For your own project, list your tasks and split them into the smallest
-   sensible agents. Write one risk + one mitigation per agent before you write
-   any code.
-
-> 📺 **Build 2026 grounding:** the governance-per-agent model aligns with
-> **Agent 365** (unified governance for all agents) in [`context.md`](../context.md).

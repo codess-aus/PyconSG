@@ -68,15 +68,3 @@ enough to leak.
   regressions.
 - **Trace span**: one timed unit of work (a tool call, an LLM call) within a
   larger request tree.
-
-## Do this next
-
-1. Instrument one agent with `azure-monitor-opentelemetry` and confirm a span
-   per tool call.
-2. Turn one real failure into an eval case in
-   [`cases.jsonl`](../../src/merlions/evals/cases.jsonl) and run the suite in CI.
-3. Set one alert on a KQL query (e.g. p95 latency or `policy.deny` rate).
-
-> 📺 **Build 2026 grounding:** **BRK252** (*From observability to ROI*),
-> **DEM341**, **LAB540** (*Observe, optimize and protect hosted agents*), and
-> **TT682** (*Trusted AI Built for Production*).
