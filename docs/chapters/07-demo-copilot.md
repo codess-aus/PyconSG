@@ -6,6 +6,22 @@
 
 ---
 
+## Demo videos
+
+<video controls width="100%" style="margin-bottom:1rem;">
+  <source src="../assets/PYCONSG-Demo1a.mp4" type="video/mp4">
+</video>
+
+<video controls width="100%" style="margin-bottom:1rem;">
+  <source src="../assets/PyConSG-Demo2a.mp4" type="video/mp4">
+</video>
+
+<video controls width="100%">
+  <source src="../assets/PyConSG-Demo3a.mp4" type="video/mp4">
+</video>
+
+---
+
 This is Chapter 5's idea made concrete. In a few minutes, GitHub Copilot can
 scaffold a new tool for the Hawker agent, add a guardrail, and write the tests.
 Follow along step by step.
