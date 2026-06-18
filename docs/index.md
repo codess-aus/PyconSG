@@ -1,39 +1,47 @@
-# Merlions, Agents & Copilot
+# Chapter 1: Why Trust?
 
-![Cover art for Merlions, Agents & Copilot](assets/1-Title.png){ .chapter-hero }
+![Chapter 1 hero image](assets/1-Title.png){ .chapter-hero }
 
-> **A standalone guide to building trustworthy Python agents on Azure.**
-> Read it cover to cover, or jump to the chapter you need. Each chapter pairs a
-> concept with clear, copyable instructions so you can build the same patterns
-> yourself, no presentation required.
->
-> Everything here is grounded in current Microsoft Build 2026 guidance and in
-> the working repository content under [chapters](chapters/README.md).
+This guide is about building AI agents in Python (on Azure, with GitHub
+Copilot) that you can actually trust in front of customers you care about.
 
-## Chapter index
+There is a tension at the heart of it: the difference between *trusting a local hawker uncle* who has cooked the same dish for thirty years, and *trusting
+a chatbot* you met five seconds ago. Closing that gap is the whole job.
 
-| # | Chapter | Theme |
-|---|---|---|
-| 1 | [Why trust?](chapters/01-title.md) | Framing |
-| 2 | [What we'll explore](chapters/02-agenda.md) | Framing |
-| 3 | [Meet our agents](chapters/03-agents.md) | Cast |
-| 4 | [Multi-agent systems](chapters/04-multiagent.md) | Architecture |
-| 5 | [GitHub Copilot to the rescue](chapters/05-github-copilot.md) | Tooling |
-| 6 | [Trust is our architectural style](chapters/06-trust.md) | Pattern |
-| 7 | [Walkthrough: Copilot scaffolds the safe parts](chapters/07-demo-copilot.md) | Hands-on |
-| 8 | [Hawker Recommender agent](chapters/08-hawker-agent.md) | Agent |
-| 9 | [Haze Tracker agent](chapters/09-haze-agent.md) | Agent |
-| 10 | [Merlion Wisecracker agent](chapters/10-wisecracker-agent.md) | Agent |
-| 11 | [From local to cloud: Azure](chapters/11-azure-deploy.md) | Deployment |
-| 12 | [Observe. Evaluate. Improve.](chapters/12-observe.md) | Operations |
-| 13 | [Where to go from here](chapters/13-call-to-action.md) | Close |
+## Why trust is the hard part
 
-## The one-paragraph version
+A polished demo is easy; that is what demos are *for*. The hard part is the gap
+between a demo and a system that strangers depend on every day. An agent that
+dazzles on a laptop can still hallucinate facts, leak data, fail to explain
+itself, or fall over under real traffic. "Trustworthy" is not a vibe. It is a
+set of concrete engineering properties you can design for, test, and observe.
 
-Build **small, specialised agents** instead of one mega-agent. Give each one
-**least-privilege tools, grounded retrieval, and citations**. Make
-**transparency, safety, reliability, and observability** the architectural
-style, designed in, not bolted on. Use **GitHub Copilot** to generate the
-boring, safety-critical scaffolding. Ship to **Azure** with **OpenTelemetry**
-tracing and **continuous evaluation** from day one. The Build 2026 mantra:
-*Observe. Evaluate. Improve. Roll out safely. Repeat.*
+This guide gives you two things:
+
+- **Developers** get a copyable pattern (small agents, guardrails,
+  observability) and three working examples to run.
+- **Decision makers** get a vocabulary (*transparency, safety, reliability,
+  observability*) and a sense of what each one costs and buys.
+
+## The promise
+
+No magic mega-agent. Instead: **small, specialised, well-governed agents that
+collaborate.** That is the pattern that actually ships.
+
+## Key terms
+
+- **Agent**: an LLM-driven program that can call tools, make decisions, and
+  produce an answer, often over multiple steps.
+- **Trustworthy**: explainable, safe, reliable, and observable. The rest of
+  these chapters define each property concretely.
+
+## Do this next
+
+1. Clone the repo: [`README.md`](../README.md) has setup steps.
+2. Skim the source layout under [`src/merlions/`](../src/merlions): three
+   agents, their tools, their policies, and an eval suite.
+3. Read the chapters in order, or jump to the agent that matches your use case.
+
+> 📺 **Go deeper:** the Microsoft Build 2026 sessions that inform this guide are
+> listed in [`talk/context.md`](../talk/context.md). Start with **BRK250** (observe
+> and control agents across any framework).

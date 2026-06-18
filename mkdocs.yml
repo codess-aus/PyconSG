@@ -75,16 +75,15 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Chapters:
-      - 1. Why Trust?: chapters/01-title.md
-      - 2. What We'll Explore: chapters/02-agenda.md
-      - 3. Meet Our Agents: chapters/03-agents.md
-      - 4. Multi-Agent Systems: chapters/04-multiagent.md
-      - 5. GitHub Copilot to the Rescue: chapters/05-github-copilot.md
-      - 6. Trust Is Our Architectural Style: chapters/06-trust.md
-      - "7. Walkthrough: Copilot Scaffolds the Safe Parts": chapters/07-demo-copilot.md
-      - 8. Hawker Recommender Agent: chapters/08-hawker-agent.md
-      - 9. Haze Tracker Agent: chapters/09-haze-agent.md
-      - 10. Merlion Wisecracker Agent: chapters/10-wisecracker-agent.md
-      - "11. From Local to Cloud: Azure": chapters/11-azure-deploy.md
-      - 12. Observe. Evaluate. Improve.: chapters/12-observe.md
-      - 13. Where to Go From Here: chapters/13-call-to-action.md
+      - 1. What We'll Explore: chapters/02-agenda.md
+      - 2. Meet Our Agents: chapters/03-agents.md
+      - 3. Multi-Agent Systems: chapters/04-multiagent.md
+      - 4. GitHub Copilot to the Rescue: chapters/05-github-copilot.md
+      - 5. Trust Is Our Architectural Style: chapters/06-trust.md
+      - "6. Walkthrough: Copilot Scaffolds the Safe Parts": chapters/07-demo-copilot.md
+      - 7. Hawker Recommender Agent: chapters/08-hawker-agent.md
+      - 8. Haze Tracker Agent: chapters/09-haze-agent.md
+      - 9. Merlion Wisecracker Agent: chapters/10-wisecracker-agent.md
+      - "10. From Local to Cloud: Azure": chapters/11-azure-deploy.md
+      - 11. Observe. Evaluate. Improve.: chapters/12-observe.md
+      - 12. Where to Go From Here: chapters/13-call-to-action.md
