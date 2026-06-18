@@ -2,8 +2,6 @@
 
 ![Chapter 6 hero image](../assets/6-trust.png){ .chapter-hero }
 
-**Code:** [`src/merlions/governance.py`](../../src/merlions/governance.py)
-
 ---
 
 Think of trust as four pillars. Like the load-bearing walls of a Peranakan
@@ -12,10 +10,10 @@ runs through every wall.
 
 | Pillar | What it means | In this repo |
 |---|---|---|
-| **Transparency** | The agent explains its decisions and cites sources | `require_citation` in [policies](../../src/merlions/policies) |
-| **Safety** | Guardrails, validation, allowlists, content checks (**fail closed**) | [`governance.py`](../../src/merlions/governance.py) |
+| **Transparency** | The agent explains its decisions and cites sources | `require_citation` in policy config |
+| **Safety** | Guardrails, validation, allowlists, content checks (**fail closed**) | Governance decorator on every tool |
 | **Reliability** | Retries, fallbacks, idempotency | Haze fallback chain, dedupe keys |
-| **Observability** | Logs, metrics, traces for every decision | [`telemetry.py`](../../src/merlions/telemetry.py) |
+| **Observability** | Logs, metrics, traces for every decision | OpenTelemetry spans on every call |
 
 ## Each pillar, concretely
 
@@ -51,8 +49,6 @@ allowlist, here are the traces, here's the eval suite."*
 ## Key terms
 
 - **Fail closed**: when uncertain, deny. The safe default.
-- **Policy as configuration**: guardrails live in YAML
-  ([`policies/`](../../src/merlions/policies)), not hardcoded, so they can change
-  without a redeploy.
+- **Policy as configuration**: guardrails live in YAML, not hardcoded, so they can change without a redeploy.
 - **Audit trail**: a durable, queryable record of what the agent decided and
   why.

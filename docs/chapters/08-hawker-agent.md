@@ -2,8 +2,6 @@
 
 ![Chapter 8 hero image](../assets/8-hawkeragent.png){ .chapter-hero }
 
-**Code:** [`src/merlions/agents/hawker.py`](../../src/merlions/agents/hawker.py)
-
 ---
 
 Picture a simple exchange. User: *"Recommend dinner near me."* Agent:
@@ -14,19 +12,16 @@ three things happen.
 
 **1. Tool use.** The agent called a maps tool to find nearby hawker centres. The
 tool is on an allowlist: it can *read* locations. It cannot write, pay, or
-book. **Least privilege.** See
-[`tools/maps.py`](../../src/merlions/tools/maps.py).
+book. **Least privilege.**
 
 **2. RAG (retrieval-augmented generation).** The agent retrieves from a verified
 menu dataset rather than guessing what a stall serves, then phrases it nicely.
-**Grounded.** See [`tools/menu_index.py`](../../src/merlions/tools/menu_index.py).
+**Grounded.**
 
 **3. Trust.** Every claim is validated against the retrieved source, and every
 answer cites which stall, which review, which date. If the agent can't find a
 citation, it says *"I'm not sure; here's what I do know."* **Honest about
-uncertainty.** The policy
-([`policies/hawker.yaml`](../../src/merlions/policies/hawker.yaml)) sets
-`require_citation: true`.
+uncertainty.** The hawker policy sets `require_citation: true`.
 
 ## Why "grounded" actually matters
 

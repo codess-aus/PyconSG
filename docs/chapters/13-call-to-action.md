@@ -18,13 +18,9 @@ Three takeaways to carry home.
 
 Do this in your next week. It changes how you build forever:
 
-- Clone the repo and run the three examples
-  ([`talk/demos/README.md`](../demos/README.md)).
 - **Ship one tool** with a typed signature and input validation.
-- **Add one guardrail** as policy-as-configuration (see
-  [`policies/`](../../src/merlions/policies)).
-- **Write one eval** from a real failure (see
-  [`evals/`](../../src/merlions/evals)).
+- **Add one guardrail** as policy-as-configuration.
+- **Write one eval** from a real failure.
 
 ## If you are a decision maker
 
@@ -47,13 +43,10 @@ absolutely; but **trust** is what makes them useful at scale.
 
 ## Where to go next
 
-- **This repo:** [`README.md`](../../README.md), the three agents in
-  [`src/merlions/agents/`](../../src/merlions/agents), and the eval suite.
 - **The chapters:** revisit [Chapter 6 (Trust)](06-trust.md),
   [Chapter 11 (Azure)](11-azure-deploy.md), and
   [Chapter 12 (Observe)](12-observe.md) as your build checklist.
-- **Build 2026 sessions:** the full list with codes is in
-  [`talk/context.md`](../context.md).
+- **Build 2026 sessions:** search for BRK250, LTG405, and DEM303 on the Microsoft Build website.
 
 > 📺 **Build 2026 grounding:** **DEM303** (*Late to agentic coding? Don't panic,
 > build.*), the encouragement to just start.

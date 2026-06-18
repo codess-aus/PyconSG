@@ -2,8 +2,6 @@
 
 ![Chapter 4 hero image](../assets/4-multiagent.png){ .chapter-hero }
 
-**Code:** [`src/merlions/agents/router.py`](../../src/merlions/agents/router.py)
-
 ---
 
 Three specialised agents are only useful if they work together. The
@@ -35,10 +33,6 @@ hawker haze wisecracker     ← each least-privilege
       ▼
  composed, cited answer
 ```
-
-See the dispatch logic in
-[`router.py`](../../src/merlions/agents/router.py) and the routing policy in
-[`policies/router.yaml`](../../src/merlions/policies/router.yaml).
 
 ## Why it matters (for decision makers)
 

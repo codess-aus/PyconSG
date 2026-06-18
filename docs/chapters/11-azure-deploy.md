@@ -58,8 +58,7 @@ clean, trustworthy inputs.
 - **Use managed identity** between Container Apps, Cosmos, and Key Vault. No
   secrets to rotate.
 - **Put prompts and policies in config, not code**, so you can change a
-  guardrail without redeploying (see
-  [`policies/`](../../src/merlions/policies)).
+  guardrail without redeploying.
 - **Turn on Application Insights on day one**, not day ninety. Retrofitting
   traces is painful.
 

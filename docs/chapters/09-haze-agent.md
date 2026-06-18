@@ -2,8 +2,6 @@
 
 ![Chapter 9 hero image](../assets/9-hazeagent.png){ .chapter-hero }
 
-**Code:** [`src/merlions/agents/haze.py`](../../src/merlions/agents/haze.py)
-
 ---
 
 Consider a typical response: *"PSI eighty-two, moderate. Take care, drink water,
@@ -14,7 +12,7 @@ outside. **The cost of a wrong answer is real.**
 ## The pattern: ingest → forecast → alert
 
 **1. Ingest.** The agent pulls from NEA's public PSI feed. Tool use,
-allowlisted, read-only. See [`tools/nea.py`](../../src/merlions/tools/nea.py).
+allowlisted, read-only.
 
 **2. Forecast.** A small forecasting step projects the next few hours and
 attaches a **confidence score**. Low confidence? The agent says so. It does not

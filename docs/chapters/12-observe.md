@@ -2,9 +2,6 @@
 
 ![Chapter 12 hero image](../assets/12-observe.png){ .chapter-hero }
 
-**Code:** [`src/merlions/telemetry.py`](../../src/merlions/telemetry.py) · [`src/merlions/evals/`](../../src/merlions/evals)
-**Runner:** [`talk/demos/demo3.ps1`](../demos/demo3.ps1)
-
 ---
 
 Trustworthy agents run on a continuous feedback loop: **Collect → Understand →
@@ -14,20 +11,18 @@ feeds the next improvement.
 ## The loop
 
 **Collect:** logs, metrics, traces. Every tool call, every guardrail decision,
-every refusal, every latency. Default on. Emitted as **OpenTelemetry** spans;
-see [`telemetry.py`](../../src/merlions/telemetry.py).
+every refusal, every latency. Default on. Emitted as **OpenTelemetry** spans.
 
 **Understand:** dashboards and alerts. What's slow? What's failing? Which
 guardrails are firing, too much or not enough?
 
 **Improve:** feedback loops and evals. Take real traces, turn them into eval
 cases, run them every CI build. The agent gets measurably better, week over
-week. See [`evals/cases.jsonl`](../../src/merlions/evals/cases.jsonl) and
-[`evals/runner.py`](../../src/merlions/evals/runner.py).
+week.
 
 ## A worked example
 
-Run `./talk/demos/demo3.ps1` and you'll see the loop in action:
+Here is what the loop looks like in action:
 
 1. **A real tool-call trace** in Application Insights, ~380ms end-to-end, with
    custom dimensions: `agent_id`, `policy` version, `decision=allow`,

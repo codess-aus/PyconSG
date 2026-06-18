@@ -2,9 +2,6 @@
 
 ![Chapter 10 hero image](../assets/10-jokeagent.png){ .chapter-hero }
 
-**Code:** [`src/merlions/agents/wisecracker.py`](../../src/merlions/agents/wisecracker.py)
-**Runner:** [`talk/demos/demo2.ps1`](../demos/demo2.ps1)
-
 ---
 
 *"Why do Python devs love the sea? Because they prefer high tide and high code
@@ -18,7 +15,7 @@ plus a personality layer on top:
 
 - **A content guardrail** scans inputs and tool arguments for unsafe patterns.
 - **A personality prompt** with explicit do's and don'ts keeps the tone in
-  bounds. See [`policies/wisecracker.yaml`](../../src/merlions/policies/wisecracker.yaml).
+  bounds.
 - **A refusal path** for when input gets weird: humour never overrides safety.
 
 > Personality is a product feature. **Trust is what lets you ship it.** Without
@@ -42,8 +39,6 @@ When you run it, you'll see:
    is the only thing without one, intentionally, because humour is opinion, not
    fact.
 4. A **trace tree**: one parent span, three children, ~600ms end-to-end.
-
-Run it: `./talk/demos/demo2.ps1` (no API keys, no network).
 
 ## Why the un-cited pun is correct
 

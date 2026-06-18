@@ -2,8 +2,6 @@
 
 ![Chapter 3 hero image](../assets/3-Agents.png){ .chapter-hero }
 
-**Code:** [`src/merlions/agents/`](../../src/merlions/agents)
-
 ---
 
 We will work with three agents throughout this guide. Three jobs, and three very
@@ -15,10 +13,7 @@ different risk profiles.
 | **Haze Tracker** | Watch PSI / air quality | Missed alert, or alert fatigue | Idempotent alerts, fallback data sources, forecast confidence score |
 | **Merlion Wisecracker** | Bring puns and perspective | Tone going off the rails | Content guardrail, explicit personality do's/don'ts, refusal path |
 
-Each lives in its own module:
-[`hawker.py`](../../src/merlions/agents/hawker.py),
-[`haze.py`](../../src/merlions/agents/haze.py),
-[`wisecracker.py`](../../src/merlions/agents/wisecracker.py).
+Each lives in its own module: `hawker.py`, `haze.py`, `wisecracker.py`.
 
 ## Why three agents instead of one?
 
@@ -40,7 +35,7 @@ without risk scaling with it.
 
 - **Persona / system prompt**: the instructions that define an agent's job and
   boundaries. See each agent's policy in
-  [`src/merlions/policies/`](../../src/merlions/policies).
+  the agent's policy configuration.
 - **Least privilege**: each agent gets only the tools it needs, nothing more.
 - **Risk profile**: the specific ways a given agent can fail, and what each
   failure would cost.
