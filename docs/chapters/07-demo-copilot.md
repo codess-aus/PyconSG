@@ -7,15 +7,15 @@
 ## Demo videos
 
 <video controls width="100%" style="margin-bottom:1rem;">
-  <source src="../assets/PYCONSG-Demo1a.mp4" type="video/mp4">
+  <source src="../../assets/PYCONSG-Demo1a.mp4" type="video/mp4">
 </video>
 
 <video controls width="100%" style="margin-bottom:1rem;">
-  <source src="../assets/PyConSG-Demo2a.mp4" type="video/mp4">
+  <source src="../../assets/PyConSG-Demo2a.mp4" type="video/mp4">
 </video>
 
 <video controls width="100%">
-  <source src="../assets/PyConSG-Demo3a.mp4" type="video/mp4">
+  <source src="../../assets/PyConSG-Demo3a.mp4" type="video/mp4">
 </video>
 
 ---
